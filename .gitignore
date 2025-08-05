@@ -1,0 +1,81 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# AWS
+.aws/
+aws-exports.js
+
+# Event-driven specific
+event-logs/
+*.event
+event-data/
+event-triggers/
+
+# Lambda functions
+*.zip
+function.zip
+deployment-package.zip
+lambda-*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+env/
+ENV/
+
+# NodeJS (if any)
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Environment variables
+.env
+.env.*
+*.env
+
+# SNS/SQS message files
+*.msg
+messages/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Plan files
+*.tfplan
+plan.out
+
+# EventBridge rules
+eventbridge-rules.json
