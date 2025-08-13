@@ -1,3 +1,28 @@
+# =============================================================================
+# AWS Event-Driven Architecture - Terraform Configuration
+# =============================================================================
+# This configuration deploys a complete event-driven architecture using:
+#
+# Event Flow:
+# Producer → SQS Queue → Lambda Consumer → Processing/Storage
+#
+# Components:
+# - SQS queues (main queue + dead letter queue)
+# - Lambda functions (producer and consumer)
+# - IAM roles and policies for secure access
+# - CloudWatch logs for monitoring and debugging
+# - Event source mappings for automated triggers
+#
+# Architecture Benefits:
+# - Decoupled microservices
+# - Automatic scaling and fault tolerance
+# - Dead letter queue for failed message handling
+# - Real-time event processing
+#
+# Use Cases: Order processing, notifications, data pipelines
+# Last Updated: $(date +'%Y-%m-%d')
+# =============================================================================
+
 # Data sources
 data "aws_caller_identity" "current" {}
 
